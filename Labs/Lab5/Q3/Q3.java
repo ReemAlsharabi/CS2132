@@ -20,11 +20,17 @@ public class Q3
 		
 		System.out.println("\n-----------------------------------------\n");
 
-		System.out.println("substring 2 to 4 of s1 is: " + s1.substring(2,4));
+		System.out.println("substring 1 to 3 of s1 is: ");
+		MyString1 sub = s1.substring(1,3);
+		for (int i = 0; i < sub.length(); i++)
+			System.out.print(sub.charAt(i));
 
 		System.out.println("\n-----------------------------------------\n");
 
-		System.out.println("s3 in lower case is: " + s3.toLowerCase());
+		System.out.println("s3 in lower case is: ");
+		MyString1 lower = s3.toLowerCase();
+		for (int i = 0; i < lower.length(); i++)
+			System.out.print(lower.charAt(i));
 		
 		System.out.println("\n-----------------------------------------\n");
 
@@ -32,7 +38,9 @@ public class Q3
 		
 		System.out.println("\n-----------------------------------------\n");
 
-		System.out.println("values of 0 in all strings are: " + MyString1.valueOf(0));
-		
+		System.out.println("value of 15 as a string is: ");
+		MyString1 myInt = MyString1.valueOf(15);
+		for (int i = 0; i < myInt.length(); i++)
+			System.out.print(myInt.charAt(i));
 	}
 }
