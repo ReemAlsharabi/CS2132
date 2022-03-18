@@ -74,11 +74,8 @@ public class MyString1
 			n /= 10;
 			length++;
 		}
-
-		// Create a char array of the length of i
 		char[] ch = new char[length];
 		
-		// Copy the digits in i to the array
 		for (int j = 0, k = (int)Math.pow(10, length - 1); j < length; j++, k /= 10)
 		{
 			ch[j] = Character.forDigit((i / k), 10);
